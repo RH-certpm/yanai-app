@@ -1,12 +1,12 @@
-FROM koji/image-build
-MAINTAINER <mrandria@example.com>
+FROM registry.access.redhat.com/ubi8/ubi-minimal  
+MAINTAINER <yanai@example.com>
 
 ### Add Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels#####
-LABEL name="rhcert-app" \
-      vendor="Test Partner RHcert" \
+LABEL name="yanai-app" \
+      vendor="Yanai Testing" \
       version="1.0" \
       release="1" \
-      summary="Starter app" \
+      summary="Yanai Corp's Starter app" \
       description="Starter app will do ....." 
 
 COPY licenses /licenses
