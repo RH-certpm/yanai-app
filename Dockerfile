@@ -10,13 +10,3 @@ LABEL name="mrandria-app" \
       description="Starter app will do ....." 
 
 COPY licenses /licenses
-
-RUN microdnf install yum \
-              
-  && yum -y update-minimal --security --sec-severity=Important  \
-  
-  && yum -y update-minimal --security --sec-severity=Critical \
-              
-  && yum clean all \
-              
-  && microdnf clean all
