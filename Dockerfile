@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi-minimal  
+FROM registry.access.redhat.com/ubi8/ubi 
 MAINTAINER <mrandria@example.com>
 
 ### Add Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels#####
