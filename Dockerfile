@@ -10,3 +10,11 @@ LABEL name="rhcert-app" \
       description="Starter app will do ....." 
 
 COPY licenses /licenses
+
+RUN microdnf install yum \
+              
+  && yum -y update-minimal --security --sec-severity=Important --sec-severity=Critical \
+              
+  && yum clean all \
+              
+  && microdnf clean all
