@@ -13,15 +13,9 @@ COPY licenses /licenses
 
 RUN microdnf install yum \
               
-  && yum -y update-minimal --security --sec-severity=Important --sec-severity=Critical \
-              
-  && yum clean all \
-              
-  && microdnf clean all
-
-RUN microdnf install yum \
-              
-  && yum -y update-minimal --security --sec-severity=Important --sec-severity=Critical \
+  && yum -y update-minimal --security --sec-severity=Important  \
+  
+  && yum -y update-minimal --security --sec-severity=Critical \
               
   && yum clean all \
               
