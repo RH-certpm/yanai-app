@@ -1,5 +1,5 @@
-FROM registry.access.redhat.com/ubi7-dev-preview/ubi-minimal  
-MAINTAINER <yanai@example.com>
+FROM koji/image-build
+MAINTAINER <mrandria@example.com>
 
 ### Add Atomic/OpenShift Labels - https://github.com/projectatomic/ContainerApplicationGenericLabels#####
 LABEL name="rhcert-app" \
